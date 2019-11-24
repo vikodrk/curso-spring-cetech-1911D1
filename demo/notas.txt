@@ -1,0 +1,22 @@
+==================
+Links
+=================
+
+Sprint Tool Suite (STS): https://spring.io/tools
+Spring Initializer: https://start.spring.io/
+JDK 8 by Oracle: https://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html
+
+=================
+STAD tecnologico
+=================
+
+- JDK 8 (preferible el de Oracle)
+- IDE (STS usado durante el curso. Si desean usar otro no hay problema)
+- Postman* (Para peticiones y test)
+
+===================
+Documentacion
+===================
+
+Buenas practicas con servicios REST: https://mascandobits.es/programacion/buenas-practicas-para-el-buen-diseno-de-una-api-restful/
+
