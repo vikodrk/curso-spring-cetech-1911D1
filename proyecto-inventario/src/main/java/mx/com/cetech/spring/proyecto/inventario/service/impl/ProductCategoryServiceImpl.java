@@ -1,13 +1,11 @@
 package mx.com.cetech.spring.proyecto.inventario.service.impl;
 
 import java.util.List;
-import java.util.function.Supplier;
 import java.util.stream.Collectors;
 
 import org.springframework.beans.factory.annotation.Autowired;
 
 import mx.com.cetech.spring.proyecto.inventario.data.dao.IProductCategoryDAO;
-import mx.com.cetech.spring.proyecto.inventario.exception.custom.NotDataFoundException;
 import mx.com.cetech.spring.proyecto.inventario.model.mapper.EntitiesMapper;
 import mx.com.cetech.spring.proyecto.inventario.model.to.CatalogTO;
 import mx.com.cetech.spring.proyecto.inventario.service.AbstractBaseService;
@@ -23,8 +21,7 @@ public class ProductCategoryServiceImpl extends AbstractBaseService implements I
 
 	@Override
 	public CatalogTO findCategoryById(Long id) {
-		Supplier<NotDataFoundException> noDataSup = () -> buildException(id);
-		return mapper.mapProductCategory(productCategoryDAO.findByID(id).orElseThrow(noDataSup));
+		return mapper.mapProductCategory(productCategoryDAO.findByID(id));
 	}
 
 	@Override

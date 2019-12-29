@@ -16,6 +16,5 @@ public class EntitiesMapper {
 	public CatalogTO mapRole(Roles entity) {
 		return CatalogTO.builder().id(entity.getIdRole()).description(entity.getDescription()).build();
 	}
-	
 
 }
